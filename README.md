@@ -21,8 +21,9 @@ Don't forget to drink coffee before running the application, keep smiling brothe
 - Option F to exit the app
 
 ## Main Features :
-- **Improve! Support Win 10**
-- **Portable Application
+- **Improve! User Interface**
+- **Improve! Support Windows 10**
+- **Portable Application**
 - **Max Number of client 100**
 - **You create password to hidden**
 <br>

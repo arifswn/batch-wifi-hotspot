@@ -9,6 +9,13 @@ setlocal enableextensions disabledelayedexpansion
 :MENU
 cls
 echo.
+echo ________________________________________________________________________________
+echo.
+echo                                .:: Sinau Tech ::.
+echo                           .:: https://sinautech.id ::.
+echo.
+echo ________________________________________________________________________________
+echo.
 echo                              .:: Pilih Menu ::.
 echo.
 echo [A] Start Hosted Network
@@ -16,15 +23,17 @@ echo [B] Status Hosted Network
 echo [C] Stop Hosted Network
 echo [D] Create Hosted Network
 echo [E] Cek Hosted Network Support
-echo [F] Exit
+echo [F] About
+echo [G] Exit
 echo.
-SET /P "C=[A, B, C, D, E, F] ? "
+SET /P "C=[A, B, C, D, E, F, G] ? "
 if [%C%]==[A] goto CEK
 if [%C%]==[B] goto STATUS
 if [%C%]==[C] goto STOP
 if [%C%]==[D] goto CREATE
 if [%C%]==[E] goto SUPPORT
-if [%C%]==[F] goto KELUAR
+if [%C%]==[F] goto ABOUT
+if [%C%]==[G] goto KELUAR
 goto MENU
 
 :SUPPORT
@@ -102,6 +111,26 @@ netsh wlan start hostednetwork
 cls
 echo Hosted Network Status Start...
 pause > nul
+goto MENU
+
+:ABOUT
+cls
+echo.
+echo ________________________________________________________________________________
+echo.
+echo                                .:: Sinau Tech ::.
+echo                           .:: https://sinautech.id ::.
+echo.
+echo ________________________________________________________________________________
+echo.
+echo .:: Main Features ::.
+echo    - Improve! User Interface
+echo    - Improve! Support Windows 10
+echo    - Portable Application
+echo    - Max Number of client 100
+echo    - You create password to hidden
+echo.
+pause>nul
 goto MENU
 
 :KELUAR
